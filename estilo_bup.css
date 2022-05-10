@@ -1,0 +1,556 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+/* HEADER */
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    background-color:#F3F9F2; 
+
+}
+.header__div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__logo {
+    width: 90px;
+    padding:3px;
+}
+
+.header__titulo{
+    font-family: 'Bebas Neue', cursive;
+    font-size:50px;
+    color:#1D4430;
+    padding:3px;
+}
+.header__nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding:3px;
+}
+
+a{
+    text-decoration: none;
+    color:#1D4430;
+}
+
+
+li{
+    font-family: 'Bebas Neue', cursive;
+    font-size:25px;
+    padding:15px;
+}
+
+main{
+    background-color:#F3F9F2; 
+    margin-bottom:30px;
+}
+
+/* MAIN IMAGEN CON TEXTO1 */
+.main__section1{
+    display: flex;
+    background-image: url(../recursos/index_main/main1_fondo.jpg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    padding:100px;
+    
+}
+
+.main__section1Tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D4430; 
+    height:175px;
+    width:500px;
+    border-radius: 10px 100px / 120px;
+}
+
+
+.main__section1h2{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:30px;
+    padding: 20px;
+}
+
+.main__section1__boton{
+    background-color:#F3F9F2;
+    border-style: solid;
+    border-color: #94949465;
+    border-radius: 10px;
+    color: #1D4430;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size:20px;
+    height:40px;
+    width:120px;
+}
+
+/* MAIN CARTAS CON ICONOS */
+
+.main__cartas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main__cartas__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D4430; 
+    height:375px;
+    width:300px;
+    border-radius: 10px 100px / 120px;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-right:40px;
+    margin-left:40px;
+}
+
+.main__cartas_icono{
+    height:100px;
+    width:100px;
+}
+
+.main__cartas__titulo{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main__cartas__texto{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:15px;
+    padding: 10px;
+}
+
+.main__cartas__boton{
+    background-color:#F3F9F2;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size:20px;
+    height: 40px;
+    width: 120px;
+    margin-top: 15px;
+}
+
+/* MAIN IMAGEN CON TEXTO2 */
+
+.main__section3{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../recursos/index_main/main3_fondo-01.png);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    padding: 100px;
+}
+
+.main__section3Tarjeta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D4430; 
+    height: 150px;
+    width: 450px;
+    border-radius: 10px 100px / 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.main__section3h2{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:30px;
+}
+
+/* FOOTER */
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    bottom: 0%;
+    background-color: #1D4430;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer__redes__div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer__redes__texto{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    margin-left: 20px;
+
+}
+
+.footer__redes__icon1{
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.footer__redes__div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__texto{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size:15px;
+    margin-right: 20px;
+}
+
+/* PRINCIPIANTES */
+/* MAIN */
+.principiantes__main__fondo{
+    display: flex;
+    justify-content: center;
+    background-image: url(../recursos/principiantes/principiantes_main1_baja.jpg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    padding: 50px;
+}
+
+.principiantes__main__titulo{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:100px;
+}
+
+/* ARTICULO1 */
+.principiantes__articulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.principiantes__articulo1_titulo{
+    color: #1D4430;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size:30px;
+    width: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.principiantes__articulo1_texto{
+    color: #1D4430;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size:20px;
+    width: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.principiantes__articulo1_div2{
+    align-items: center;
+    justify-content: flex-end;
+    width: 576px;
+    height: 384px;
+    border-radius: 30px;
+}
+
+.principiantes__articulo2_titulo{
+    color: #1D4430;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size:30px;
+    width: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.principiantes__articulo2_texto{
+    color: #1D4430;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size:20px;
+    width: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+/* SERVICIOS */
+.servicios__main__fondo{
+    display: flex;
+    justify-content: center;
+    background-image: url(../recursos/servicios/servicios_main1_baja.jpg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    padding: 50px;
+}
+
+.servicios__main_titulo{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:100px;
+} 
+
+/* ARTICULO 1 */
+.servicios__articulo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.servicios__articulo1__titulo{
+    color: #1D4430;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:30px;
+    width: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.servicios__articulo1__texto{
+    color: #1D4430;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:20px;
+    width: 1000px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* GALERIA */
+.servicios__galeria{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios__galeria__img{
+    width: 640px;
+    height: 480px;
+    padding: 1px;
+}
+
+/* TIENDA */
+/* MAIN */
+
+.tienda__main__fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../recursos/tienda/tienda_fondo.png);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    padding: 50px;
+}
+
+.tienda__main__titulo{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:80px;
+    text-align: center;
+}
+
+.tienda__main__texto{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    text-align: center;
+}
+
+.tienda__plantas__tituto{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:60px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #1D4430;
+}
+
+/* TIENDA TARJETAS */
+
+.tienda__plantas__tarjeta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tienda__plantas__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D4430; 
+    height:375px;
+    width:300px;
+    border-radius: 10px 100px / 120px;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-right:40px;
+    margin-left:40px;
+}
+
+.tienda__plantas__div__titulo{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tienda__plantas__div__img{
+    height:210px;
+    width:145px;
+    border-radius: 10px 60px / 40px;
+}
+
+.tienda__plantas__div__boton{
+    background-color:#F3F9F2;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size:20px;
+    height: 40px;
+    width: 150px;
+    margin-top: 15px;
+}
+
+/* CONTACTO */
+/* MAIN */
+.contacto__main__fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../recursos/contacto/contacto_fondo.jpg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    padding: 50px;
+}
+
+.contacto__main__titulo{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:80px;
+    text-align: center;
+}
+
+.contacto__main__texto{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    text-align: center;
+}
+
+/* FORMULARIO */
+.contacto__forumlario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacto__forumlario__img{
+    width: 640px;
+    height: 426px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.contacto__formulario__label{
+    color:#1D4430;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+    text-align: left;
+}
+
+.contacto__formulario__input{
+    color:#1D4430;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    height: 36px;
+    width: 500px;
+    text-align: left;
+    background-color: white;
+    padding: 5px;
+}
+
+.contacto__formulario__textarea{
+    color:#1D4430;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    height: 150px;
+    width: 500px;
+    text-align: left;
+    background-color: white;
+    padding: 5px;
+}
+
+.contacto__formulario__boton{
+    background-color:#F3F9F2;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size:20px;
+    height: 40px;
+    width: 150px;
+    margin-top: 15px;
+}
