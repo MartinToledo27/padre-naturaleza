@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Vivero - Padre naturaleza</title>
 </head>
@@ -34,29 +35,29 @@
         <section class="servicios__main__fondo">
             <h2 class="servicios__main_titulo">S E R V I C I O S</h2>
         </section>
-        <section class="servicios__articulo1">
+        <section class="servicios__articulo1" data-aos="zoom-in">
             <h2 class="servicios__articulo1__titulo">Paisajismo y Parquización</h2>
             <article class="servicios__articulo1__texto"> 
                 Ofrecemos servicios integrales de jardinería y paisajismo, diseñando proyectos con una mirada sostenible y creativa desde el concepto y la funcionalidad. Garantizamos la más alta calidad de especies y productos utilizados.
             </article>
         </section>
-        <section class="servicios__articulo2">
+        <section class="servicios__articulo2" data-aos="zoom-in">
             <h2 class="servicios__articulo1__titulo">Diseño y Creación de Espacios Verdes</h2>
             <p class="servicios__articulo1__texto">
                 Diseñamos el jardín adaptado a sus necesidades, preferencias y al espacio disponible en armonía con su entorno. Realizamos movimientos de tierra, instalación de riego, iluminación, plantación de árboles, arbustos y especies de temporada, instalación de césped y panes, cercos.
             </p>
         </section>
         <!-- GALERIA -->
-        <section class="servicios__galeriaUno">
+        <section class="servicios__galeriaUno" data-aos="flip-left">
             <img class="servicios__galeria__img" src="../recursos/servicios/servicios_main2_1_baja.jpg"/>
         </section>
-        <section class="servicios__galeriaDos">
+        <section class="servicios__galeriaDos" data-aos="flip-left">
             <img class="servicios__galeria__img" src="../recursos/servicios/servicios_main2_2_baja.jpg"/>
         </section>
-        <section class="servicios__galeriaTres">
+        <section class="servicios__galeriaTres" data-aos="flip-left">
             <img class="servicios__galeria__img" src="../recursos/servicios/servicios_main2_3_baja.jpg"/>
         </section>
-        <section class="servicios__galeriaCuatro">
+        <section class="servicios__galeriaCuatro" data-aos="flip-left">
             <img class="servicios__galeria__img" src="../recursos/servicios/servicios_main2_4_baja.jpg"/>
         </section>
     </main>
@@ -70,5 +71,9 @@
             <p class="footer__texto">Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

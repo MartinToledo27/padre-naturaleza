@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/estilo.css">
         <title>Vivero - Padre naturaleza</title>
     </head>
@@ -35,32 +36,32 @@
             <h2 class="tienda__main__titulo">T I E N D A  O N L I N E</h2>
             <p class="tienda__main__texto"> Recibí el pedido en tu hogar o retiralo por nuestro local</p>
         </section>
-        <section class="tienda__plantas__titulo">
+        <section class="tienda__plantas__titulo" data-aos="fade-up">
             <h2 class="tienda__plantas__tituto__edit">P L A N T A S</h2>
         </section>
         <!-- TIENDA TARJETAS -->
-        <section class="tienda__plantas__tarjeta__uno">
+        <section class="tienda__plantas__tarjeta__uno" data-aos="flip-left">
             <div class="tienda__plantas__div">
                 <h2 class="tienda__plantas__div__titulo">Alocasia</h2>
                 <img class="tienda__plantas__div__img" src="../recursos/tienda/tienda_alocasia.jpg"/>
                 <button class="tienda__plantas__div__boton">Añadir al carrito</button>
             </div>
         </section>
-        <section class="tienda__plantas__tarjeta__dos">
+        <section class="tienda__plantas__tarjeta__dos" data-aos="flip-left">
             <div class="tienda__plantas__div">
                 <h2 class="tienda__plantas__div__titulo">Cuna de Moises</h2>
                 <img class="tienda__plantas__div__img" src="../recursos/tienda/tienda_cuna_moises.jpg"/>
                 <button class="tienda__plantas__div__boton">Añadir al carrito</button>
             </div>
         </section>
-        <section class="tienda__plantas__tarjeta__tres">
+        <section class="tienda__plantas__tarjeta__tres" data-aos="flip-left">
             <div class="tienda__plantas__div">
                 <h2 class="tienda__plantas__div__titulo">Potus</h2>
                 <img class="tienda__plantas__div__img" src="../recursos/tienda/tienda_potus.jpg"/>
                 <button class="tienda__plantas__div__boton">Añadir al carrito</button>
             </div>
         </section>
-        <section class="tienda__plantas__tarjeta__cuatro">
+        <section class="tienda__plantas__tarjeta__cuatro" data-aos="flip-left">
             <div class="tienda__plantas__div">
                 <h2 class="tienda__plantas__div__titulo">Sansevieria</h2>
                 <img class="tienda__plantas__div__img" src="../recursos/tienda/tienda_sansevieria.jpg"/>
@@ -78,5 +79,9 @@
             <p class="footer__texto">Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
