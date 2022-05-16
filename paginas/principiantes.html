@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../recursos/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="recursos/favicon/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Vivero - Padre naturaleza</title>
 </head>
@@ -21,22 +23,76 @@
             <a href="../index.html"><img class="header__logo" src ="../recursos/logo/logo.png"/></a>
             <h1  class="header__titulo">Padre naturaleza</h1>
         </div>
-        <nav>
-            <ul class="header__nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/principiantes.html">Principiantes</a></li>
-                <li><a href="../paginas/servicios_.html">Servicios</a></li>
-                <li><a href="../paginas/tienda.html">Tienda online</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav> 
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../index.html">INICIO</a>
+                  <a class="nav-link" href="principiantes.html">PRINCIPIANTES</a>
+                  <a class="nav-link" href="servicios_.html">SERVICIOS</a>
+                  <a class="nav-link" href="tienda.html">TIENDA ONLINE</a>
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </div>
+              </div>
+            </div>
+        </nav>
     </header>
     <main class="main_principiantes_grid">
         <section class="principiantes__main__fondo">
             <h2 class="principiantes__main__titulo">P R I N C I P I A N T E S</h2>
         </section>
-
-        <section class="principiantes__articulo1" data-aos="zoom-in">
+        <!-- TITULO ACORDEON -->
+        <section class="principiantes__banner__titulo" data-aos="fade-up">
+            <h2 class="principiantes__banner__titulo__edit">C O N S E J O S</h2>
+        </section>
+        <!-- ACORDEON -->
+        <div class="accordion" id="accordionExample" data-aos="fade-up">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿QUÉ PLANTAS ELEGIR?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Por mucho que te gusten las orquídeas o los bonsáis, es mejor que empieces con plantas fáciles de cuidar que sobrevivan a tus descuidos y torpezas de nuevo jardinero.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    LAS RECOMENDACIONES DE LOS EXPERTOS SON...
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Se recomienda comenzar con potos (Epipremnum aureum), lenguas de tigre (Sanseviera) o costillas de Adán (Monstera deliciosa). También la yuca, las dracenas, el espatifilo (Spathiphyllum), la schefflera y la zamioculca, considerada una “terminator”, una de las más resistentes del mundo.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    PIENSA DÓNDE LA COLOCARÁS
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Es importante decidir previamente dónde "residirá" tu planta para seleccionar la más adecuada. Aunque ahora sea pequeñita al crecer puede ser muy alta o ancha y necesitar más espacio del que pensabas. Preguntate siempre cuál es su pauta de crecimiento antes de comprarla. “No podemos poner una planta muy pequeña en un espacio muy amplio porque pasará desapercibida y no creará el efecto deseado o viceversa”, afirman los expertos.
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- texto imagen -->
+        <section class="principiantes__banner__titulo2" data-aos="fade-up">
+            <h2 class="principiantes__banner__titulo2__edit">R I E G O</h2>
+        </section>
+        <section class="principiantes__img1" data-aos="zoom-in"></section>
+          <section class="principiantes__articulo1" data-aos="zoom-in">
             <h2 class="principiantes__articulo1_titulo">¿Cómo regar correctamente las plantas?</h2>
             <article class="principiantes__articulo1_texto"> 
                 Uno de los problemas más frecuentes a la hora de cuidar nuestras plantas, es el Descontrol de Riego.
@@ -44,17 +100,14 @@
                 Si bien estas recomendaciones sirven para todas las plantas, están indicadas para las plantas que tenemos en macetas, esten en interior o en el exterior de nuestro hogar.
             </article>
         </section>
-
-        <section class="principiantes__img1" data-aos="zoom-in">
+        <section class="principiantes__img1" data-aos="zoom-in">      
             <div class="principiantes__img1__edit"></div>
         </section>
-
         <section class="principiantes__img2" data-aos="zoom-in">
             <div class="principiantes__img2__edit"></div>
         </section>
-
         <section class="principiantes__articulo2" data-aos="zoom-in">
-            <h2 class="principiantes__articulo2_titulo">¿Cúando Regar?</h2>
+            <h2 class="principiantes__articulo2_titulo">¿Cúando regar?</h2>
             <article class="principiantes__articulo2_texto">
                 Para decidir si regar o no, siempre hay que tocar la tierra de la maceta para determinar si está húmeda o seca.
                 Recomendamos regar recién cuando la tierra este seca, utilizando abundante agua, tratando de mojar la superficie de la maceta en su totalidad, así el agua llega bien a todas las raíces y logran humedecerse correctamente. A veces vemos la superficie de la tierra seca, pero si revisamos en profundidad y está humeda, no debemos regar, ya que estaremos generando un exceso de agua en la planta y dañandole las raices.
@@ -64,10 +117,10 @@
     <footer>
         <div class="footer__redes__div1">
             <h2 class="footer__redes__texto">Nuestras redes</h2>
-            <a  href="http://www.facebook.com/" target="_blank"><img class="footer__redes__icon1" src ="../recursos/index_main/footer_1.png"/></a>
-            <a  href="http://www.instagram.com/" target="_blank"><img class="footer__redes__icon1" src ="../recursos/index_main/footer_2.png"/></a>
+            <a class="footer__icono"  href="http://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a class="footer__icono" href="http://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <div class="footer__redes__div2">
+        <div>
             <p class="footer__texto">Todos los derechos reservados.</p>
         </div>
     </footer>
@@ -75,5 +128,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

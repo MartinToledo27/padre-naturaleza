@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Vivero - Padre naturaleza</title>
 </head>
@@ -21,15 +23,22 @@
             <a href="../index.html"><img class="header__logo" src ="../recursos/logo/logo.png"/></a>
             <h1  class="header__titulo">Padre naturaleza</h1>
         </div>
-        <nav>
-            <ul class="header__nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/principiantes.html">Principiantes</a></li>
-                <li><a href="../paginas/servicios_.html">Servicios</a></li>
-                <li><a href="../paginas/tienda.html">Tienda online</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav> 
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../index.html">INICIO</a>
+                  <a class="nav-link" href="principiantes.html">PRINCIPIANTES</a>
+                  <a class="nav-link" href="servicios_.html">SERVICIOS</a>
+                  <a class="nav-link" href="tienda.html">TIENDA ONLINE</a>
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </div>
+              </div>
+            </div>
+        </nav>
     </header>
     <main class="main__servicios__grid">
         <section class="servicios__main__fondo">
@@ -48,26 +57,44 @@
             </p>
         </section>
         <!-- GALERIA -->
-        <section class="servicios__galeriaUno" data-aos="flip-left">
-            <img class="servicios__galeria__img" src="../recursos/servicios/servicios_main2_1_baja.jpg"/>
-        </section>
-        <section class="servicios__galeriaDos" data-aos="flip-left">
-            <img class="servicios__galeria__img" src="../recursos/servicios/servicios_main2_2_baja.jpg"/>
-        </section>
-        <section class="servicios__galeriaTres" data-aos="flip-left">
-            <img class="servicios__galeria__img" src="../recursos/servicios/servicios_main2_3_baja.jpg"/>
-        </section>
-        <section class="servicios__galeriaCuatro" data-aos="flip-left">
-            <img class="servicios__galeria__img" src="../recursos/servicios/servicios_main2_4_baja.jpg"/>
-        </section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-aos="fade-up">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../recursos/servicios/servicios_main2_1.png" class="d-block altura__imagen w-100" alt="imagen1">
+              </div>
+              <div class="carousel-item">
+                <img src="../recursos/servicios/servicios_main2_2.png" class="d-block altura__imagen w-100" alt="imagen2">
+              </div>
+              <div class="carousel-item">
+                <img src="../recursos/servicios/servicios_main2_3.png" class="d-block altura__imagen w-100" alt="imagen3">
+              </div>
+              <div class="carousel-item">
+                <img src="../recursos/servicios/servicios_main2_4.png" class="d-block altura__imagen w-100" alt="imagen4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
     <footer>
         <div class="footer__redes__div1">
             <h2 class="footer__redes__texto">Nuestras redes</h2>
-            <a  href="http://www.facebook.com/" target="_blank"><img class="footer__redes__icon1" src ="../recursos/index_main/footer_1.png"/></a>
-            <a  href="http://www.instagram.com/" target="_blank"><img class="footer__redes__icon1" src ="../recursos/index_main/footer_2.png"/></a>
+            <a class="footer__icono"  href="http://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a class="footer__icono" href="http://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <div class="footer__redes__div2">
+        <div>
             <p class="footer__texto">Todos los derechos reservados.</p>
         </div>
     </footer>
@@ -75,5 +102,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
