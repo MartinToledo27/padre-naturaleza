@@ -42,6 +42,7 @@ header{
 
 a {
     text-decoration: none;
+    color:#1D4430;
 }
 
 a:hover{
@@ -58,6 +59,7 @@ a:hover{
 
 .nav-link:hover{
     color:#24b168;
+    text-decoration: underline;
 }
 
 .main_index_grid{
@@ -68,15 +70,6 @@ a:hover{
     "bannerDos bannerDos bannerDos";
     background-color:#F3F9F2; 
     margin-bottom: 3.187rem;
-}
-
-a {
-    text-decoration: none;
-    color:#1D4430;
-}
-
-a:hover{
-    color:#24b168;
 }
 
 /* MAIN IMAGEN CON TEXTO1 */
@@ -257,7 +250,6 @@ footer{
     margin-left: 1.25rem;
 
 }
-
 
 .footer__texto{
     color: white;
@@ -796,10 +788,6 @@ footer{
         height:60vh;
         width:60vw;
         border-radius: 10px 100px / 120px;
-        margin-top:2.5rem;
-        margin-bottom:2.5rem;
-        margin-right:2.5rem;
-        margin-left:2.5rem;
     }
 
     .main__cartas__titulo{
@@ -1221,10 +1209,6 @@ footer{
         height:67vh;
         width:65vw;
         border-radius: 10px 100px / 120px;
-        margin-top:2.5rem;
-        margin-bottom:2.5rem;
-        margin-right:2.5rem;
-        margin-left:2.5rem;
     }
 
     .main__cartas__titulo{
@@ -1346,10 +1330,8 @@ footer{
     }
 
     .principiantes__articulo1_texto{
-        color: #1D4430;
-        font-family: 'Roboto', sans-serif;
         text-align: center;
-        font-size:1.25rem;
+        font-size:1rem;
         margin: 1rem;
     }
 
@@ -1381,8 +1363,6 @@ footer{
     }
 
     .principiantes__articulo2_titulo{
-        color: #1D4430;
-        font-family: 'Roboto', sans-serif;
         font-size:1.875rem;
         text-align: center;
         margin: 1rem;
@@ -1390,9 +1370,7 @@ footer{
     }
 
     .principiantes__articulo2_texto{
-        color: #1D4430;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.25rem;
+        font-size: 1rem;
         text-align: center;
         margin: 1rem;
     }
@@ -1436,18 +1414,12 @@ footer{
     }
     
     .servicios__articulo1__titulo{
-        color: #1D4430;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
         font-size:1.875rem;
         margin: 0.5rem;
     }
     
     .servicios__articulo1__texto{
-        color: #1D4430;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        font-size:1.25rem;
+        font-size:1rem;
         margin: 0.5rem;
     }
     /* GALERIA */
@@ -1536,10 +1508,9 @@ footer{
     /* MAIN */
     .main__contacto__grid{
         grid-template-columns: auto;
-        grid-template-rows: 0.60fr 0.50fr 0.50fr; 
+        grid-template-rows: 0.60fr 0.25fr; 
         grid-template-areas:"banner"
                             "contacto"
-                            "img";
     }
     .contacto__main__fondo {
         grid-area: banner;
@@ -1559,10 +1530,7 @@ footer{
 
     /* FORMULARIO */
     .contacto__forumlario__img{
-        width: 80vw;
-        height: 40vh;
-        border-radius: 30px;
-        margin-top: 1rem;
+        display: none;
     }
 
     .contacto__formulario__input{
