@@ -1,0 +1,1352 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* INDEX MAIN */
+.main_index_grid{
+    display: grid;
+    grid-template-areas:
+    "bannerUno bannerUno bannerUno"
+    "tarjetaUno tarjetaDos tarjetaTres"
+    "bannerDos bannerDos bannerDos";
+    background-color: $color__background; 
+    margin-bottom: 3.187rem;
+}
+
+/* MAIN IMAGEN CON TEXTO1 */
+.main{
+    &__section1{
+    grid-area: bannerUno;
+    display: flex;
+    background-image: url(../recursos/index_main/main1_fondo.jpg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+    padding:6.25rem; 
+    }
+    &__section1Tarjeta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $color__cartas__degrade; 
+        height:28vh;
+        width:36.60vw;
+        border-radius: 10px 100px / 120px;
+    }
+    &__section1h2{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size: 1.875rem;
+        padding: 1.25rem;
+    }
+    &__section1__boton{
+        background-color: $color__fondo__boton;
+        border-style: solid;
+        border-color: #94949465;
+        border-radius: 10px;
+        color: color__tipografia;
+        font-family: $tipografia__botones;
+        text-align: center;
+        font-size: 1.25rem;
+        height:7vh;
+        width:10vw;
+    }
+/* MAIN CARTAS CON ICONOS */
+    &__cartas__uno{
+        grid-area: tarjetaUno;
+    }
+    &__cartas__dos{
+        grid-area: tarjetaDos;
+    }
+    &__cartas__tres{
+        grid-area: tarjetaTres;
+    }
+    &__cartas__div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $color__cartas__degrade; 
+        height:60vh;
+        width:21.96vw;
+        border-radius: 10px 100px / 120px;
+        margin-top:2.5rem;
+        margin-bottom:2.5rem;
+        margin-right:2.5rem;
+        margin-left:2.5rem;
+    }
+    &__cartas_icono{
+        color: $color__icono;
+        font-size: 5rem;
+    }
+    &__cartas__titulo{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size: 1.875rem;
+        margin-top: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+    &__cartas__texto{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size: 1.10rem;
+    }
+    &__cartas__boton{
+        background-color:$color__fondo__boton;
+        border-radius: 0.625rem;
+        font-family: $tipografia__botones;
+        text-align: center;
+        font-size: 1.25rem;
+        height: 6.4vh;
+        width: 8.78vw;
+    }
+/* MAIN IMAGEN CON TEXTO2 */
+    &__section3{
+        grid-area: bannerDos;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url(../recursos/index_main/main3_fondo-01.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        padding: 6.25rem;
+        }
+    &__section3Tarjeta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $color__cartas__degrade;  
+        height: 24vh;
+        width: 29.28vw;
+        border-radius: 10px 100px / 120px;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+    }
+    &__section3h2{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size: 1.75rem;
+    }
+}
+
+.main__cartas__uno, .main__cartas__dos, .main__cartas__tres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boton:hover {
+    background: $color__boton__degrade;
+    color:$color__hover;
+}
+
+/* PRINCIPIANTES */
+/* MAIN */
+.main_principiantes_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 0.10fr 0.80fr 0.10fr 1fr 1fr; 
+    grid-template-areas:"banner banner"
+                        "titulo1 titulo1"
+                        "acordeon acordeon"
+                        "titulo2 titulo2"
+                        "texto1 img1"
+                        "img2 texto2";
+    margin-bottom: 1rem;
+}
+.principiantes{
+/* BANNER */
+    &__main__fondo{
+        grid-area: banner;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../recursos/principiantes/principiantes_main1_baja.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        height: 35vh;
+        margin-bottom: 0.625rem;
+    }
+    &__main__titulo{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:6.25rem;
+    }
+/* TITULO1 */
+    &__banner__titulo{
+        grid-area: titulo1;
+        display: flex;
+        justify-content: center;
+        background: $color__titulos__degrade;
+        padding: 1.25rem;
+        margin-bottom: 0.625rem;
+    }
+    &__banner__titulo__edit{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:3.75rem;
+        text-align: center;
+    }
+/* TITULO2 */
+    &__banner__titulo2{
+        grid-area: titulo2;
+        display: flex;
+        justify-content: center;
+        background: $color__titulos__degrade;
+        padding: 1.25rem;
+        margin-bottom: 0.625rem;
+    }
+    &__banner__titulo2__edit{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:3.75rem;
+        text-align: center;
+    }
+/* ARTICULO1 */
+    &__articulo1{
+        grid-area: texto1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    &__articulo1_titulo{
+        color: $color__tipografia;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size:1.875rem;
+    }
+    &__articulo1_texto{
+        color: $color__tipografia;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size:1.25rem;
+    }
+/* IMAGEN 1 */
+    &__img1{
+        grid-area: img1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img1__edit{
+        background-image: url(../recursos/principiantes/articulo1.png);
+        width: 40vw;
+        height: 55vh;
+        border-radius: 30px;
+    }
+/* IMAGEN2 */
+    &__img2{
+        grid-area: img2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img2__edit{
+        background-image: url(../recursos/principiantes/articulo2.png);
+        width: 40vw;
+        height: 55vh;
+        border-radius: 30px;
+    }
+/* ARTICULO 2 */
+    &__articulo2{
+        grid-area: texto2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    &__articulo2_titulo{
+        color: $color__tipografia;
+        font-family: $tipografia__textos;
+        font-size:1.875rem;
+        text-align: center;
+    }
+    &__articulo2_texto{
+        color: $color__tipografia;
+        font-family: $tipografia__textos;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+/* ACORDEON */
+.accordion{
+    grid-area: acordeon;
+    justify-content: center;
+    margin: 1rem;
+    align-items: center;
+}
+.accordion-button{
+    color: color__tipografia;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+}
+.accordion-collapse{
+    color: color__tipografia;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* SERVICIOS */
+.main__servicios__grid{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.50fr; 
+    grid-template-areas:"banner"
+                        "textoUno"
+                        "textoDos"
+                        "galeria";
+}
+
+.servicios{
+    &__main__fondo{
+        grid-area: banner;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../recursos/servicios/servicios_main1_baja.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        height: 35vh;
+        margin-bottom: 0.625rem;
+    }
+    &__main_titulo{
+        color:$color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:6.25rem;
+    } 
+/* ARTICULO 1 */
+    &__articulo1{
+        grid-area: textoUno;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    &__articulo1__titulo{
+        color: $color__tipografia;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size:1.875rem;
+        margin: 1rem;
+    }
+    &__articulo1__texto{
+        color: $color__tipografia;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size:1.25rem;
+        margin: 1rem;
+    }
+    &__articulo2{
+        grid-area: textoDos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+}
+
+/* GALERIA */
+.carousel{
+    grid-area: galeria;
+    margin: 1rem;
+}
+.altura__imagen{
+    height: 90vh
+}
+
+/* TIENDA */
+/* MAIN */
+.main__tienda__grid{
+    display: grid;
+    grid-template-columns: 0.50fr 0.50fr 0.50fr 0.50fr;
+    grid-template-rows: 0.50fr 0.10fr 2fr; 
+    grid-template-areas:"banner banner banner banner"
+                        "titulo titulo titulo titulo"
+                        "tarjetaUno tarjetaDos tarjetaTres tarjetaCuatro";
+    margin-bottom: 1rem;
+}
+
+.tienda{
+    &__main__fondo {
+        grid-area: banner;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(../recursos/tienda/tienda_fondo.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        height: 35vh;
+        margin-bottom: 0.625rem;
+    }
+    &__main__titulo{
+        color:$color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:5rem;
+        text-align: center;
+    }
+    &__main__texto{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:2.5rem;
+        text-align: center;
+    }
+    &__plantas__titulo{
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        background: $color__titulos__degrade;
+        padding: 1.25rem;
+        margin-bottom: 0.625rem;
+    }
+    &__plantas__tituto__edit{
+        color:$color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:3.75rem;
+        text-align: center;
+    }
+/* TIENDA TARJETAS */
+    &__plantas__tarjeta__uno{
+        grid-area: tarjetaUno;
+    }
+    &__plantas__tarjeta__dos{
+        grid-area: tarjetaDos;
+    }
+    &__plantas__tarjeta__tres{
+        grid-area: tarjetaTres;
+    }
+    &__plantas__tarjeta__cuatro{
+        grid-area: tarjetaCuatro;
+    }
+    &__plantas__div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $color__cartas__degrade;  
+        height:60vh;
+        width:21.97vw;
+        border-radius: 10px 100px / 120px;
+    }
+    &__plantas__div__titulo{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        text-align: center;
+        font-size:1.875rem;
+        margin-top: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+    &__plantas__div__img{
+        height:33.6vh;
+        width:10.62vw;
+        border-radius: 10px 60px / 40px;
+    }
+    &__plantas__div__boton{
+        background-color: $color__fondo__boton;
+        border-radius: 10px;
+        font-family: $tipografia__botones;
+        text-align: center;
+        font-size:1.25rem;
+        height: 6.4vh;
+        width: 10.99vw;
+        margin-top: 0.7rem;
+        &:hover {
+            background:$color__boton__degrade;
+            color:$color__hover;
+        }
+    }
+}
+
+.tienda__plantas__tarjeta__uno, .tienda__plantas__tarjeta__dos, .tienda__plantas__tarjeta__tres, .tienda__plantas__tarjeta__cuatro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTACTO */
+/* MAIN */
+.main__contacto__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.50fr 1fr; 
+    grid-template-areas:"banner banner"
+                        "contacto img";
+    margin-bottom: 1rem;
+}
+.contacto{
+    &__main__fondo {
+        grid-area: banner;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(../recursos/contacto/contacto_fondo.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        height: 35vh;
+        margin-bottom: 0.625rem;
+    }
+    &__main__titulo{
+        color: $color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:5rem;
+        text-align: center;
+    }
+    &__main__texto{
+        color:$color__tipografia__cartas;
+        font-family: $tipografia__textos;
+        font-size:2.5rem;
+        text-align: center;
+    }
+/* FORMULARIO */
+    &__forumlario{
+        grid-area: contacto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem;
+    }
+    &__forumlario__img__div{
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    &__forumlario__img{
+        width: 46.86vw;
+        height: 68.16vh;
+        border-radius: 30px;
+    }
+    &__forulario_textarea{
+        height: 25vh;
+    }    
+    &__formulario__boton{
+        background-color:$color__fondo__boton;
+        border-radius: 10px;
+        font-family: $tipografia__botones;
+        text-align: center;
+        font-size:1.25rem;
+        height: 5.76vh;
+        width: 25vw;
+        margin-top: 1rem;
+        &:hover {
+            background: $color__boton__degrade;
+            color:$color__hover;
+        }
+    }
+}
+
+
+.form-label{
+    color:$color__tipografia;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.30rem;
+    text-align: left;
+}
+
+@media (min-width: 541px) and (max-width: 720px){
+    header{
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: auto;
+    }
+
+    .header{
+        &__div{
+            justify-content: flex-start;
+        }
+        &__logo {
+            width: 17vw;
+            padding: 0.19rem;
+        }
+        &__titulo{
+            font-size:2.5rem;
+            padding:0.19rem;
+        }
+    }
+    .nav-link{
+        font-size:1.2rem;
+        padding:0.5rem;
+    }
+/* INDEX */
+	.main_index_grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.75fr 0.5fr 0.5fr 0.5fr 0.75fr; 
+        grid-template-areas:
+        "bannerUno"
+        "tarjetaUno" 
+        "tarjetaDos" 
+        "tarjetaTres"
+        "bannerDos";
+        margin-bottom: 1rem;;
+    }
+    /* MAIN IMAGEN CON TEXTO1 */
+    .main{
+        &__section1{
+            grid-area: bannerUno;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0rem;
+            width: 100vw;
+        }
+        &__section1Tarjeta{
+            height:23vh;
+            width: 75vw;
+            border-radius: 10px 100px / 120px;
+        }
+        &__section1h2{
+            font-size: 1.60rem;
+            padding: 0rem;
+        }
+        &__section1__boton{
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.35rem;;
+            height:6vh;
+            width:30vw;
+        }
+    /* MAIN CARTAS CON ICONOS */
+        &__cartas__div{
+            height:60vh;
+            width:60vw;
+            border-radius: 10px 100px / 120px;
+        }
+        &__cartas__titulo{
+            font-size: 1.75rem;
+            margin-top: 0.625rem;
+            margin-bottom: 0.625rem;
+        }
+        &__cartas__texto{
+            text-align: center;
+            font-size: 1rem;
+            padding: 0.625rem;
+        }
+        &__cartas__boton{
+            font-size: 1.15rem;;
+            height:6vh;
+            width:25vw;
+            margin-top: 0rem;
+        }
+        &__cartas_icono{
+            font-size: 3rem;
+        }
+    /* MAIN IMAGEN CON TEXTO2 */
+        &__section3{
+            grid-area: bannerDos;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0rem;
+            width: 100vw;
+        }
+        &__section3Tarjeta{
+            height:20vh;
+            width: 85vw;
+            border-radius: 10px 100px / 120px;
+        }
+        &__section3h2{
+            font-size: 1.7rem;
+            padding: 1rem;
+        }
+    }
+    /* FOOTER */
+    footer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        &__redes__div1{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__redes__texto{
+            font-size:1.10rem;
+            margin-left: 0rem;
+    
+        }
+        &__redes__icon1{
+            padding-left: 0.625rem;
+            width: 6vw;
+            height: 5vh;
+        }
+        &__texto{
+            font-size:1.10rem;
+            padding-right: 0rem;
+        }  
+    }
+    
+    /* PRINCIPIANTES */
+    /* MAIN */
+    .main_principiantes_grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.25fr 0.10fr 0.75fr 0.10fr 0.75fr 0.50fr 0.75fr 0.50fr; 
+        grid-template-areas:"banner"
+                            "titulo1"
+                            "acordeon"
+                            "titulo2"
+                            "texto1" 
+                            "img1"
+                            "texto2"
+                            "img2";
+        margin-bottom: 1rem;
+    }
+    .principiantes{
+        &__main__fondo{
+            grid-area: banner;
+            height: 25vh;
+        }
+        &__main__titulo{
+            font-size:3rem;
+        }
+     /* ARTICULO1 */
+        &__articulo1_titulo{
+            text-align: center;
+            font-size:2rem;
+            margin: 1rem;
+        }
+        &__articulo1_titulo{
+            text-align: center;
+            font-size:2rem;
+            margin: 1rem;
+        }
+        &__articulo1_texto{
+            text-align: center;
+            font-size:1.25rem;
+            margin: 1rem;
+        }
+        &__img1{
+            grid-area: img1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__img1__edit{
+            width: 80vw;
+            height: 40vh;
+            background-size:  cover;        
+            border-radius: 30px;
+            margin-top: 1.5rem;
+        }
+        &__img2{
+            grid-area: img2; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__img2__edit{
+            width: 80vw;
+            height: 40vh;
+            background-size:  cover;        
+            border-radius: 30px;
+            margin-top: 1.5rem;
+        }
+        &__articulo2_titulo{
+            font-size:1.875rem;
+            margin: 1rem;
+            margin-top: 2rem;
+        }
+        &__articulo2_texto{
+            font-size: 1.25rem;
+            margin: 1rem;
+        }
+    }
+    .accordion-button{
+        font-size: 1.10rem;
+    }
+
+    /* SERVICIOS */
+    .main__servicios__grid{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.25fr 0.50fr 0.50fr 1fr; 
+        grid-template-areas:"banner"
+                            "textoUno"
+                            "textoDos"
+                            "galeria";
+        margin-bottom: 1rem;
+    }
+    .servicios{
+        &__main__fondo{
+            grid-area: banner;
+            height: 25vh;
+        }
+        &__main_titulo{
+            font-size:4rem;
+        } 
+    /* ARTICULO 1 */
+        &__articulo1{
+            grid-area: textoUno;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem;
+        }
+        &__articulo2{
+            grid-area: textoDos;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem;
+        }
+        &__articulo1__titulo{
+            font-size:1.875rem;
+            margin: 0.5rem;
+        }
+        &__articulo1__texto{
+            font-size:1.25rem;
+            margin: 0.5rem;
+        }
+    }
+    /* GALERIA */
+    .altura__imagen{
+        height: 64vh
+    }
+        /* TIENDA */
+    /* MAIN */
+    .main__tienda__grid{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 0.50fr 0.10fr 1fr 1fr; 
+            grid-template-areas:"banner banner"
+                                "titulo titulo"
+                                "tarjetaUno tarjetaDos" 
+                                "tarjetaTres tarjetaCuatro";
+            margin-bottom: 0.25rem;
+    }
+
+    .tienda{
+        &__main__fondo{
+            grid-area: banner;
+            height: 25vh;
+        }
+        &__main__titulo{
+            font-size:2.5rem;
+        }
+        &__main__texto{
+            font-size:1.15rem;
+        }
+        &__plantas__titulo{
+            grid-area: titulo;
+            padding: 1.25rem;
+            margin-bottom: 0.625rem;
+        }
+        &__plantas__tituto__edit{
+            font-size:2rem;
+        }
+    /* TIENDA TARJETAS */
+        &__plantas__tarjeta__uno{
+            margin: 0.5rem;
+        }
+        &__plantas__tarjeta__dos{
+            margin: 0.5rem;
+        }
+        &__plantas__tarjeta__tres{
+            margin: 0.5rem;
+        }
+        &__plantas__tarjeta__cuatro{
+            margin: 0.5rem;
+        }
+        &__plantas__div{
+            height:60vh;
+            width:45vw;
+        }
+        &__plantas__div__titulo{
+            font-size:1.5rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.625rem;
+        }
+        &__plantas__div__img{
+            width:30vw;
+        }
+        &__plantas__div__boton{
+            font-size:1.25rem;
+            height: 6.4vh;
+            width: 30vw;
+            margin-top: 0.7rem;
+        }
+    }
+    /* CONTACTO */
+    /* MAIN */
+    .main__contacto__grid{
+        grid-template-columns: auto;
+        grid-template-rows: 0.50fr 0.75fr; 
+        grid-template-areas:"banner banner"
+                            "contacto img";
+    }
+
+    .contacto{
+        &__main__fondo {
+            grid-area: banner;
+            height: 25vh;
+        }
+        &__main__titulo{
+            font-size:2rem;
+            align-items: center;
+        }
+        &__main__texto{
+            font-size:1.25rem;
+            margin: 0.5rem;
+        }
+    /* FORMULARIO */
+        &__forumlario{
+            display: flex;
+        }
+        &__forumlario__img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45vw;
+            height: 45vh;
+            border-radius: 30px;
+            margin-top: 1rem;
+        }
+        &__formulario__label{
+            font-size:1.50em;
+            margin: 1rem;
+            text-align: left;
+        }
+        &__formulario__input{
+            margin: 1rem;
+            font-size:0.875rem;
+            height: 5.76vh;
+            width: 40vw;
+        }
+        &__formulario__textarea{
+            margin: 1rem;
+            font-size:0.875rem;
+            height: 20vh;
+            width: 40vw;
+            padding: 0.313rem;
+        }
+        &__formulario__boton{
+            margin: 1rem;
+            font-size:1.25rem;
+            height: 5.76vh;
+            width: 40vw;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (min-width: 329px) and (max-width: 540px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .header{
+        &__div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__logo {
+            width: 20vw;
+            padding: 0.19rem;
+        }
+        &__titulo{
+            font-size:2rem;
+            padding:0.19rem;
+        }
+    }
+
+    .nav-link{
+        font-size:1rem;
+        padding:0.2rem;
+    }
+
+	.main_index_grid{
+        display: grid;
+         grid-template-columns: auto;
+        grid-template-rows: 0.75fr 0.5fr 0.5fr 0.5fr 0.75fr; 
+        grid-template-areas:
+        "bannerUno"
+        "tarjetaUno" 
+        "tarjetaDos" 
+        "tarjetaTres"
+        "bannerDos";
+        margin-bottom: 1rem;;
+    }
+    /* MAIN IMAGEN CON TEXTO1 */
+    .main{
+        &__section1{
+            grid-area: bannerUno;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0rem;
+            width: 100vw;
+        }
+        &__section1Tarjeta{
+            height:25vh;
+            width: 75vw;
+            border-radius: 10px 100px / 120px;
+        }
+        &__section1h2{
+            font-size: 1.15rem;
+            padding: 0rem;
+        }
+        &__section1__boton{
+            border-radius: 0.625;
+            text-align: center;
+            font-size: 1.05rem;;
+            height:4vh;
+            width:30vw;
+        }
+    /* MAIN CARTAS CON ICONOS */
+        &__cartas__div{
+            height:67vh;
+            width:65vw;
+            border-radius: 10px 100px / 120px;
+        }
+        &__cartas__titulo{
+            font-size: 1.875rem;
+            margin-top: 0.625rem;
+            margin-bottom: 0.625rem;
+        }
+        &__cartas__texto{
+            font-size: 0.938rem;
+            padding: 0.625rem;
+        }
+        &__cartas__boton{
+            border-radius: 0.625rem;
+            font-size: 1.05rem;;
+            height:4.5vh;
+            width:30vw;
+            margin-top: 0rem;
+        }
+        &__cartas_icono{
+            font-size: 3rem;
+        }
+    /* MAIN IMAGEN CON TEXTO2 */
+        &__section3{
+            grid-area: bannerDos;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0rem;
+            width: 100vw;
+        }
+        &__section3Tarjeta{
+            height:20vh;
+            width: 85vw;
+            border-radius: 10px 100px / 120px;
+        }
+        &__section3h2{
+            font-size: 1.25rem;
+            padding: 1rem;
+        }
+    }
+    /* FOOTER */
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        &__redes__div1{
+            display: flex;
+            align-items: center;
+        }
+        &__redes__texto{
+            font-size:0.9rem;
+            margin-top: 0.5rem;
+    
+        }
+        &__redes__icon1{
+            padding-left: 0.625rem;
+            width: 6.0vw;
+            height: 4.5vh;
+        }
+        &__texto{
+            font-size:0.75rem;
+            padding-right: 0rem;
+        }
+    }
+    /* PRINCIPIANTES */
+    /* MAIN */
+    .main_principiantes_grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.20fr 0.10fr 0.30fr 0.10fr 0.50fr 0.25fr 0.50fr 0.25fr; 
+        grid-template-areas:"banner"
+                            "titulo1"
+                            "acordeon"
+                            "titulo2"
+                            "texto1" 
+                            "img1"
+                            "texto2"
+                            "img2";
+        margin-bottom: 1rem;
+    }
+    .principiantes{
+        &__main__fondo{
+            grid-area: banner;
+            height: 25vh;
+        }
+        &__main__titulo{
+            font-size:1.80rem;
+        }
+        &__banner__titulo__edit{
+            font-size:2.5rem;
+        }
+        &__banner__titulo2__edit{
+            font-size:2.5rem;
+        }
+    /* ARTICULO1 */
+        &__articulo1_titulo{
+            text-align: center;
+            font-size:2rem;
+            margin: 1rem;
+        }
+        &__articulo1_texto{
+            text-align: center;
+            font-size:1rem;
+            margin: 1rem;
+        }
+        &__img1{
+            grid-area: img1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__img1__edit{
+            width: 80vw;
+            height: 40vh;
+            background-size:  cover;        
+            border-radius: 30px;
+            margin-top: 1.5rem;
+        }
+        &__img2{
+            grid-area: img2; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__img2__edit{
+            width: 80vw;
+            height: 40vh;
+            background-size:  cover;        
+            border-radius: 30px;
+            margin-top: 1.5rem;
+        }
+        &__articulo2_titulo{
+            font-size:1.875rem;
+            text-align: center;
+            margin: 1rem;
+            margin-top: 2rem;
+        }
+        &__articulo2_texto{
+            font-size: 1rem;
+            text-align: center;
+            margin: 1rem;
+        }
+    }
+    .accordion-button{
+        font-size: 1rem;
+    }
+    
+    .accordion-collapse{
+        font-size: 0.80rem;
+    }
+    /* SERVICIOS */
+    .main__servicios__grid{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.25fr 0.50fr 0.50fr 0.75fr; 
+        grid-template-areas:"banner"
+                            "textoUno"
+                            "textoDos"
+                            "galeria";
+        margin-bottom: 1rem;
+    }
+    .servicios{
+        &__main__fondo{
+            grid-area: banner;
+            height: 25vh;
+        }
+        &__main_titulo{
+            font-size:2.5rem;
+        } 
+    /* ARTICULO 1 */
+        &__articulo1{
+            grid-area: textoUno;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem;
+        }
+        &__articulo2{
+            grid-area: textoDos;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem;
+        }
+        &__articulo1__titulo{
+            font-size:1.875rem;
+            margin: 0.5rem;
+        }
+        &__articulo1__texto{
+            font-size:1rem;
+            margin: 0.5rem;
+        }
+    }
+    /* GALERIA */
+    .altura__imagen{
+        height: 48vh
+    }
+    /* TIENDA */
+    /* MAIN */
+    .main__tienda__grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.50fr 0.10fr 1fr 1fr; 
+        grid-template-areas:"banner"
+                            "titulo"
+                            "tarjetaUno" 
+                            "tarjetaDos" 
+                            "tarjetaTres" 
+                            "tarjetaCuatro";
+        margin-bottom: 0.25rem;
+    }
+    .tienda{
+        &__main__fondo {
+            grid-area: banner;
+            height: 25vh;
+        }
+        &__main__titulo{
+            font-size:1.80rem;
+            align-items: center;
+            margin: 0.5rem;
+        }
+        &__main__texto{
+            font-size:1.5rem;
+            margin:0.5rem;
+        }
+        &__plantas__titulo{
+            grid-area: titulo;
+            padding: 1.25rem;
+            margin-bottom: 0.625rem;
+        }
+        &__plantas__tituto__edit{
+            font-size:2rem;
+        }
+    /* TIENDA TARJETAS */
+        &__plantas__tarjeta__uno{
+            margin-bottom: 1rem;
+        }
+        &__plantas__tarjeta__dos{
+            margin-bottom: 1rem;
+        }
+        &__plantas__tarjeta__tres{
+            margin-bottom: 1rem;
+        }
+        &__plantas__tarjeta__cuatro{
+            margin-bottom: 1rem;
+        }
+        &__plantas__div{
+            height:60vh;
+            width:70vw;
+        }
+        &__plantas__div__titulo{
+            font-size:1.5rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.625rem;
+        }
+        &__plantas__div__img{
+            width:40vw;
+        }
+        &__plantas__div__boton{
+            font-size:1.25rem;
+            height: 6.4vh;
+            width: 45vw;
+            margin-top: 0.7rem;
+        }
+    }
+    /* CONTACTO */
+    /* MAIN */
+    .main__contacto__grid{
+        grid-template-columns: auto;
+        grid-template-rows: 0.60fr 0.25fr; 
+        grid-template-areas:"banner"
+                            "contacto"
+    }
+
+    .contacto{
+        &__main__fondo {
+            grid-area: banner;
+            height: 25vh;
+        }
+        &__main__titulo{
+            font-size:1.5rem;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+        &__main__texto{
+            font-size:1.10rem;
+            margin: 0.5rem;
+        }
+    /* FORMULARIO */
+        &__forumlario__img{
+            display: none;
+        }
+        &__formulario__input{
+            font-size:0.875rem;
+            height: 5.76vh;
+            width: 80vw;
+        }
+        &__formulario__textarea{
+            font-size:0.875rem;
+            height: 20vh;
+            width: 80vw;
+            padding: 0.313rem;
+        }
+        &__formulario__boton{
+            font-size:1.25rem;
+            height: 5.76vh;
+            width: 80vw;
+            margin-top: 1rem;
+        }
+    }
+}

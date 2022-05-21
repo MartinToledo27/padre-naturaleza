@@ -1,0 +1,40 @@
+@import 'variables';
+
+/* FOOTER */
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0%;
+    background-color: $color__background__footer;
+    padding-top: 0.938rem;
+    padding-bottom: 0.938rem;
+}
+.footer{
+    &__redes__div1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    &__redes__texto{
+        color: $color__texto__footer;
+        font-family: $tipografia__textos;
+        font-size:1.25rem;
+        margin-left: 1.25rem;
+    }
+    &__icono{
+        color: $color__icono;
+        padding-left: 1rem;
+        font-size: 1.50rem;
+        &:hover{
+        color: $color__hover;
+        }
+    }
+    &__texto{
+        color: $color__texto__footer;
+        font-family: $tipografia__textos;
+        text-align: right;
+        font-size:0.938rem;
+        padding-right: 0.625rem;
+    }
+}
