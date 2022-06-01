@@ -10,7 +10,7 @@ header{
 .header{
     &__div{
         display: flex;
-    align-items: center;
+        align-items: center;
     }
     &__logo{
         width: 7vw;
@@ -22,6 +22,7 @@ header{
         font-size:3rem;
         color:$color__tipografia;
         padding:0.19rem;
+        padding-top: 1rem;
     }
     &__nav{
         display: flex;

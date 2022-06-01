@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'helper';
 
 *{
     margin:0px;
@@ -462,11 +463,11 @@
         margin-top: 0.625rem;
         margin-bottom: 0.625rem;
     }
-    &__plantas__div__img{
+/*     &__plantas__div__img{
         height:33.6vh;
         width:10.62vw;
         border-radius: 10px 60px / 40px;
-    }
+    } */
     &__plantas__div__boton{
         background-color: $color__fondo__boton;
         border-radius: 10px;
@@ -883,7 +884,7 @@
             margin: 0.5rem;
         }
         &__plantas__div{
-            height:60vh;
+            height:85vh;
             width:45vw;
         }
         &__plantas__div__titulo{
@@ -891,15 +892,16 @@
             margin-top: 0.2rem;
             margin-bottom: 0.625rem;
         }
-        &__plantas__div__img{
-            width:30vw;
-        }
         &__plantas__div__boton{
             font-size:1.25rem;
             height: 6.4vh;
             width: 30vw;
             margin-top: 0.7rem;
         }
+    }
+    .key1-card, .key2-card, .key3-card, .key4-card{
+        width: 30vw;
+        height: 85vh;
     }
     /* CONTACTO */
     /* MAIN */
@@ -1294,15 +1296,15 @@
             margin-top: 0.2rem;
             margin-bottom: 0.625rem;
         }
-        &__plantas__div__img{
-            width:40vw;
-        }
         &__plantas__div__boton{
             font-size:1.25rem;
             height: 6.4vh;
             width: 45vw;
             margin-top: 0.7rem;
         }
+    }
+    .key1-card, .key2-card, .key3-card, .key4-card{
+        width:40vw;
     }
     /* CONTACTO */
     /* MAIN */

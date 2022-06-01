@@ -31,7 +31,8 @@ header {
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
   color: #33441d;
-  padding: 0.19rem; }
+  padding: 0.19rem;
+  padding-top: 1rem; }
 
 .header__nav {
   display: flex;
@@ -101,6 +102,35 @@ footer {
   text-align: right;
   font-size: 0.938rem;
   padding-right: 0.625rem; }
+
+/* MAP */
+.key1-card {
+  background-image: url("../recursos/tienda/tienda_alocasia.jpg");
+  background-size: cover;
+  height: 33.6vh;
+  width: 10.62vw;
+  border-radius: 10px 60px / 40px; }
+
+.key2-card {
+  background-image: url("../recursos/tienda/tienda_cuna_moises.jpg");
+  background-size: cover;
+  height: 33.6vh;
+  width: 10.62vw;
+  border-radius: 10px 60px / 40px; }
+
+.key3-card {
+  background-image: url("../recursos/tienda/tienda_potus.jpg");
+  background-size: cover;
+  height: 33.6vh;
+  width: 10.62vw;
+  border-radius: 10px 60px / 40px; }
+
+.key4-card {
+  background-image: url("../recursos/tienda/tienda_sansevieria.jpg");
+  background-size: cover;
+  height: 33.6vh;
+  width: 10.62vw;
+  border-radius: 10px 60px / 40px; }
 
 * {
   margin: 0px;
@@ -430,7 +460,12 @@ footer {
   margin-bottom: 1rem; }
 
 .tienda {
-  /* TIENDA TARJETAS */ }
+  /* TIENDA TARJETAS */
+  /*     &__plantas__div__img{
+        height:33.6vh;
+        width:10.62vw;
+        border-radius: 10px 60px / 40px;
+    } */ }
   .tienda__main__fondo {
     grid-area: banner;
     display: flex;
@@ -489,10 +524,6 @@ footer {
     font-size: 1.875rem;
     margin-top: 0.625rem;
     margin-bottom: 0.625rem; }
-  .tienda__plantas__div__img {
-    height: 33.6vh;
-    width: 10.62vw;
-    border-radius: 10px 60px / 40px; }
   .tienda__plantas__div__boton {
     background-color: #F3F9F2;
     border-radius: 10px;
@@ -808,19 +839,20 @@ footer {
     .tienda__plantas__tarjeta__cuatro {
       margin: 0.5rem; }
     .tienda__plantas__div {
-      height: 60vh;
+      height: 85vh;
       width: 45vw; }
     .tienda__plantas__div__titulo {
       font-size: 1.5rem;
       margin-top: 0.2rem;
       margin-bottom: 0.625rem; }
-    .tienda__plantas__div__img {
-      width: 30vw; }
     .tienda__plantas__div__boton {
       font-size: 1.25rem;
       height: 6.4vh;
       width: 30vw;
       margin-top: 0.7rem; }
+  .key1-card, .key2-card, .key3-card, .key4-card {
+    width: 30vw;
+    height: 85vh; }
   /* CONTACTO */
   /* MAIN */
   .main__contacto__grid {
@@ -1111,13 +1143,13 @@ footer {
       font-size: 1.5rem;
       margin-top: 0.2rem;
       margin-bottom: 0.625rem; }
-    .tienda__plantas__div__img {
-      width: 40vw; }
     .tienda__plantas__div__boton {
       font-size: 1.25rem;
       height: 6.4vh;
       width: 45vw;
       margin-top: 0.7rem; }
+  .key1-card, .key2-card, .key3-card, .key4-card {
+    width: 40vw; }
   /* CONTACTO */
   /* MAIN */
   .main__contacto__grid {

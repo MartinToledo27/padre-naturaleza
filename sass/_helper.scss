@@ -1,0 +1,12 @@
+/* MAP */
+$tienda__imagenes:(key1: "tienda_alocasia", key2: "tienda_cuna_moises", key3: "tienda_potus", key4: "tienda_sansevieria");
+
+@each $key, $plantas in $tienda__imagenes {
+    .#{$key}-card{
+        background-image: url('../recursos/tienda/#{$plantas}.jpg');
+        background-size: cover;
+        height:33.6vh;
+        width:10.62vw;
+        border-radius: 10px 60px / 40px;
+    }
+}
