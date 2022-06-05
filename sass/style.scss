@@ -1,7 +1,6 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
-@import 'helper';
 
 *{
     margin:0px;
@@ -463,11 +462,11 @@
         margin-top: 0.625rem;
         margin-bottom: 0.625rem;
     }
-/*     &__plantas__div__img{
+    &__plantas__div__img{
         height:33.6vh;
         width:10.62vw;
         border-radius: 10px 60px / 40px;
-    } */
+    }
     &__plantas__div__boton{
         background-color: $color__fondo__boton;
         border-radius: 10px;
@@ -575,14 +574,17 @@
 
 @media (min-width: 541px) and (max-width: 720px){
     header{
+        display: flex;
         flex-direction: row-reverse;
+        align-items: center;
         justify-content: center;
         width: auto;
     }
-
     .header{
         &__div{
+            display: flex;
             justify-content: flex-start;
+            align-items: center;
         }
         &__logo {
             width: 17vw;
@@ -843,7 +845,7 @@
     .main__tienda__grid{
             display: grid;
             grid-template-columns: auto;
-            grid-template-rows: 0.50fr 0.10fr 1fr 1fr; 
+            grid-template-rows: 0.30fr 0.10fr 1fr 1fr; 
             grid-template-areas:"banner banner"
                                 "titulo titulo"
                                 "tarjetaUno tarjetaDos" 
@@ -892,16 +894,16 @@
             margin-top: 0.2rem;
             margin-bottom: 0.625rem;
         }
+        &__plantas__div__img{
+            height:45.6vh;
+            width:20.62vw;
+        }
         &__plantas__div__boton{
             font-size:1.25rem;
             height: 6.4vh;
             width: 30vw;
             margin-top: 0.7rem;
         }
-    }
-    .key1-card, .key2-card, .key3-card, .key4-card{
-        width: 30vw;
-        height: 85vh;
     }
     /* CONTACTO */
     /* MAIN */
@@ -1243,7 +1245,7 @@
     .main__tienda__grid{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 0.50fr 0.10fr 1fr 1fr; 
+        grid-template-rows: 0.30fr 0.10fr 1fr 1fr; 
         grid-template-areas:"banner"
                             "titulo"
                             "tarjetaUno" 
@@ -1296,15 +1298,16 @@
             margin-top: 0.2rem;
             margin-bottom: 0.625rem;
         }
+        &__plantas__div__img{
+            height:40.6vh;
+            width:25.62vw;
+        }
         &__plantas__div__boton{
             font-size:1.25rem;
             height: 6.4vh;
             width: 45vw;
             margin-top: 0.7rem;
         }
-    }
-    .key1-card, .key2-card, .key3-card, .key4-card{
-        width:40vw;
     }
     /* CONTACTO */
     /* MAIN */
